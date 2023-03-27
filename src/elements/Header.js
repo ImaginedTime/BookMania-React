@@ -31,7 +31,7 @@ function Header() {
                 </div>
             </div>
             <div className="navbar" id="navbar" style={{display : ((navVisible && (window.innerWidth<800)) ? "flex" : "none")}}>
-                <span className="cartmenu atcmenu2" onClick="showcart(0)"><p class="fa fa-shopping-cart"></p></span>
+                <span className="cartmenu atcmenu2" onClick="showcart(0)"><p className="fa fa-shopping-cart"></p></span>
                 <span><a href="#Intro" onClick={() => togglenav()}>Intro</a></span>
                 <span><a href="#BestSellers" onClick={() => togglenav()}>BestSellers</a></span>
                 <span><a href="#Recommendations" onClick={() => togglenav()}>Recommendations</a></span>
