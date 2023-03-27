@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function ReviewSection({ reviews }) {
+function ReviewHolder({ reviews }) {
     let [currentSlide,setCurrentSlide] = useState(1);
 
     const makedot = (id) => {
@@ -58,4 +58,4 @@ function Review(review, currentslide) {
     );
 }
 
-export default ReviewSection;
+export default ReviewHolder;
