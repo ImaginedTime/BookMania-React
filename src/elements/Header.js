@@ -5,7 +5,7 @@ function Header() {
     let [navVisible, setNavVisible] = useState(false);
 
     const togglenav = () => {
-        let temp = navVisible;
+        let temp = !navVisible;
         setNavVisible(temp);
     };
 
