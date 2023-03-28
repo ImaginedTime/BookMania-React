@@ -33,3 +33,5 @@ function BookMania() {
         </>
     );
 }
+
+export default BookMania;
