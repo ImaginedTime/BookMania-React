@@ -1,13 +1,20 @@
 import { useState } from "react";
+import Cart from "./Cart";
 
-function Header() {
+function Header({ bookCart }) {
     let titleimg = "%PUBLIC_URL%/imgs/logo.jpg";
     let [navVisible, setNavVisible] = useState(false);
+    let [cartVisible, setCartVisible] = useState(false);
 
     const togglenav = () => {
         let temp = !navVisible;
         setNavVisible(temp);
     };
+
+    const toggleCart = () => {
+        let temp = !cartVisible;
+        setCartVisible(temp);
+    }
 
 
     return (
@@ -22,7 +29,7 @@ function Header() {
                     </div>
                 </div>
                 <div className="right-left-navbar">
-                    <div className="cartmenu" onClick="showcart(0)">
+                    <div className="cartmenu" onClick={toggleCart()}>
                         <p className="fa fa-shopping-cart"></p>
                     </div>
                     <div className="hamburger-menu" onClick={() => togglenav()}>
@@ -31,12 +38,13 @@ function Header() {
                 </div>
             </div>
             <div className="navbar" id="navbar" style={{display : ((navVisible && (window.innerWidth<800)) ? "flex" : "none")}}>
-                <span className="cartmenu atcmenu2" onClick="showcart(0)"><p className="fa fa-shopping-cart"></p></span>
+                <span className="cartmenu atcmenu2" onClick={toggleCart()}><p className="fa fa-shopping-cart"></p></span>
                 <span><a href="#Intro" onClick={() => togglenav()}>Intro</a></span>
                 <span><a href="#BestSellers" onClick={() => togglenav()}>BestSellers</a></span>
                 <span><a href="#Recommendations" onClick={() => togglenav()}>Recommendations</a></span>
                 <span><a href="#Reviews" onClick={() => togglenav()}>Reviews</a></span>
             </div>
+            <Cart bookCart={bookCart} isVisible={cartVisible} visibleNav={navVisible} />
         </header>
     );
 }
