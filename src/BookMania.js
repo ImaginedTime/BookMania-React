@@ -5,10 +5,16 @@ import IntroSection from "./elements/IntroSection";
 import ReviewSection from "./elements/ReviewSection";
 import Footer from "./elements/Footer";
 
+import Bestsellers from "%PUBLIC_URL%/BestSellers.json";
+import Recommendations from "%PUBLIC_URL%/Recommendations.json";
+import Reviews from "%PUBLIC_URL%/Reviews.json";
+
 
 function BookMania() {
     let [bookCart, setBookCart] = useState(Array(0));
-    let reviews, bestsellerBooks, recommendationBooks;
+    let reviews = Reviews;
+    let bestsellerBooks = Bestsellers;
+    let recommendationBooks = Recommendations;
 
     return (
         <>
