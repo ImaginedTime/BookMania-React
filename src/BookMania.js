@@ -3,6 +3,7 @@ import Card from "./elements/Card";
 import Header from "./elements/Header";
 import IntroSection from "./elements/IntroSection";
 import ReviewSection from "./elements/ReviewSection";
+import Footer from "./elements/Footer";
 
 
 function BookMania() {
@@ -27,6 +28,7 @@ function BookMania() {
             </div>
         </section>
         <ReviewSection reviews={reviews} />
+        <Footer />
         <a href="#Intro" className="backtotop"><button className="backtotop">▲</button></a>
         </>
     );
