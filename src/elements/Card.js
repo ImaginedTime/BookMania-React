@@ -6,7 +6,6 @@ function Card(params) {
     let bookDescription = params.book.description;
     let bookImg = `%PUBLIC_URL%/imgs/${params.book.img}`;
     let bookAuthor = params.book.author;
-    let clsname = `atc-${bookTitle.replaceAll(" ", "-")}`;
 
     const addtocart = (title) => {
         let bookCart = params.bookCart.slice();
@@ -31,7 +30,7 @@ function Card(params) {
                 <div className="backside-bookcard">
                     <p className="book-description">{bookDescription}</p>
                     <h2 className="book-price">Rs. {bookPrice}</h2>
-                    <button className={`add-to-cart ${clsname} ${params.bookCart.contains(bookTitle) ? "carted" : "atc"}`} onClick={() => addtocart(bookTitle)}>Add</button>
+                    <button className={`add-to-cart ${params.bookCart.contains(bookTitle) ? "carted" : "atc"}`} onClick={() => addtocart(bookTitle)}>Add</button>
                 </div>
             </div>
         </div>
