@@ -1,0 +1,34 @@
+[
+    {
+        "id" : 1,
+        "title" : "A Time To Kill",
+        "author" : "John Grisham",
+        "price" : 394,
+        "description" : "The life of a ten-year-old black girl is shattered by two drunken and remorseless white men. The mostly white town of Clanton in Ford County, Mississippi, reacts with shock and horror at the inhuman crime. That is, until the girl's father acquires an assault rifle and takes justice into his own hands.",
+        "img" : "A_time_to_kill.jpg"
+    },
+    {
+        "id" : 2,
+        "title" : "Goblet Of Fire",
+        "author" : "J.K Rowling",
+        "price" : 357,
+        "description" : "It is the summer holidays and soon Harry Potter will be starting his fourth year at Hogwarts School of Witchcraft and Wizardry. Harry is counting the days: there are new spells to be learnt, more Quidditch to be played, and Hogwarts castle to continue exploring. But Harry needs to be careful - there are unexpected dangers lurking...",
+        "img" : "Goblet_of_fire.jpg"
+    },
+    {
+        "id" : 3,
+        "title" : "Rich Dad Poor Dad",
+        "author" : "Robert Kiyokaski",
+        "price" : 375,
+        "description" : "Rich Dad Poor Dad is Robert's story of growing up with two dads — his real father and the father of his best friend, his 'rich dad' — and the ways in whichboth men shaped his thoughts about money and investing. The book explodes the myth that you need to earn a high income to be rich and explains the difference between working for money and having your money work for you.",
+        "img" : "rich_dad_poor_dad.jpg"
+    },
+    {
+        "id" : 4,
+        "title" : "Mysterious Island",
+        "author" : "Jules Verne",
+        "price" : 200,
+        "description" : "With little more than courage and ingenuity, five Union prisoners escaped the siege of Richmond-by hot-air balloon. They have no idea if they'll ever see civilization again-especially when they're swept off by a raging storm to the shores of an uncharted island.",
+        "img" : "Mysterious_island.jpg"
+    }
+]
