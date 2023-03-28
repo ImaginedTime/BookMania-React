@@ -4,15 +4,15 @@ function Card(params) {
     let bookTitle = params.book.title;
     let bookPrice = params.book.price;
     let bookDescription = params.book.description;
-    let bookImg = `%PUBLIC_URL%/imgs/${params.book.img}`;
+    let bookImg = `${process.env.PUBLIC_URL}/imgs/${params.book.img}`;
     let bookAuthor = params.book.author;
 
     const addtocart = (title) => {
         let bookCart = params.bookCart.slice();
-        if (bookCart.contains(title)) {
-            bookCart = bookCart.filter((ele) => { return (ele !== bookname) });
+        if (bookCart.some((ele) => {return ele==title})) {
+            bookCart = bookCart.filter((ele) => { return (ele !== title) });
         } else {
-            bookCart.push(bookname);
+            bookCart.push(title);
         }
         params.setBookCart(bookCart);
     }
@@ -30,7 +30,7 @@ function Card(params) {
                 <div className="backside-bookcard">
                     <p className="book-description">{bookDescription}</p>
                     <h2 className="book-price">Rs. {bookPrice}</h2>
-                    <button className={`add-to-cart ${params.bookCart.contains(bookTitle) ? "carted" : "atc"}`} onClick={() => addtocart(bookTitle)}>Add</button>
+                    <button className={`add-to-cart ${params.bookCart.some((ele) => {return ele==bookTitle}) ? "carted" : "atc"}`} onClick={() => addtocart(bookTitle)}>Add</button>
                 </div>
             </div>
         </div>

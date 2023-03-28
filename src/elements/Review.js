@@ -6,7 +6,7 @@ function ReviewHolder({ reviews }) {
 
     const makedot = (id) => {
         return (
-        <span className={`dot${(id === currentslide)?" activedot":""}`} onClick={() => setCurrentSlide(id)} key={`dot${id}`}></span>
+        <span className={`dot${(id === currentSlide)?" activedot":""}`} onClick={() => setCurrentSlide(id)} key={`dot${id}`}></span>
         );
     };
 
@@ -40,7 +40,7 @@ function Review(review, currentslide) {
 
     let email = review.email;
     let content = review.content;
-    let imgsrc = `%PUBLIC_URL%/imgs/${review.img}`;
+    let imgsrc = `${process.env.PUBLIC_URL}/imgs/${review.img}`;
     let id = review.id;
 
     return (

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Cart from "./Cart";
 
 function Header({ bookCart }) {
-    let titleimg = "%PUBLIC_URL%/imgs/logo.jpg";
+    let titleimg = `${process.env.PUBLIC_URL}/imgs/logo.jpg`;
     let [navVisible, setNavVisible] = useState(false);
     let [cartVisible, setCartVisible] = useState(false);
 
@@ -29,7 +29,7 @@ function Header({ bookCart }) {
                     </div>
                 </div>
                 <div className="right-left-navbar">
-                    <div className="cartmenu" onClick={toggleCart()}>
+                    <div className="cartmenu" onClick={() => toggleCart()}>
                         <p className="fa fa-shopping-cart"></p>
                     </div>
                     <div className="hamburger-menu" onClick={() => togglenav()}>
@@ -37,8 +37,8 @@ function Header({ bookCart }) {
                     </div>
                 </div>
             </div>
-            <div className="navbar" id="navbar" style={{display : ((navVisible && (window.innerWidth<800)) ? "flex" : "none")}}>
-                <span className="cartmenu atcmenu2" onClick={toggleCart()}><p className="fa fa-shopping-cart"></p></span>
+            <div className="navbar" id="navbar" style={{display : ((navVisible) ? "flex" : "none")}}>
+                <span className="cartmenu atcmenu2" onClick={() => toggleCart()}><p className="fa fa-shopping-cart"></p></span>
                 <span><a href="#Intro" onClick={() => togglenav()}>Intro</a></span>
                 <span><a href="#BestSellers" onClick={() => togglenav()}>BestSellers</a></span>
                 <span><a href="#Recommendations" onClick={() => togglenav()}>Recommendations</a></span>
