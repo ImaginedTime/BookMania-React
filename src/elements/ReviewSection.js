@@ -1,11 +1,11 @@
 import ReviewHolder from "./Review";
 
-function ReviewSection() {
+function ReviewSection(params) {
     return (
         <section id="Reviews">
             <div className="section-header"><b>Reviews</b></div>
             <div className="reviews-flex">
-                <ReviewHolder />
+                <ReviewHolder reviews={params.reviews} />
                 <div className="review-form">
                     <form className="review-form">
                         <h1 className="review-form-title">Your Opinion <span>Matters</span>!</h1>
