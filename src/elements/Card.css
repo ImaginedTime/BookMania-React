@@ -1,0 +1,152 @@
+
+.bookcard{
+    width: 20vw;
+    height: 35vw;
+    background: transparent;
+    margin: 0 0.5vw;
+}
+
+.bookcard-inner{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.bookcard:hover .bookcard-inner{
+    transform:rotateY(180deg);
+}
+
+.frontside-bookcard, .backside-bookcard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: rgba(0, 0, 26, 0.9);
+    border-radius: 20px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.frontside-bookcard{
+    display: grid;
+    row-gap: 0;
+    grid-template-rows: 80% 20%;
+}
+.backside-bookcard{
+    display: grid;
+    transform: rotateY(180deg);
+    justify-content: center;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 70% 10% 20%;
+}
+
+.bookimg{
+    height: 90%;
+    width: 100%;
+    grid-row: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: grid;
+}
+.bookcard img{
+    margin: 0 0;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.booktitle{
+    grid-row: 2;
+}
+.booktitle h2{
+    margin-top: 5%;
+}
+.booktitle h4{
+    margin-top: 10%;
+}
+
+p.book-description{
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 1.1em;
+}
+
+.book-price{
+    grid-column: 2;
+    grid-row: 2;
+    color:#FFED00;
+}
+
+.add-to-cart{
+    width: 50%;
+    grid-row: 3;
+    grid-column: 2;
+    font-weight: 900;  
+    border-color: black;
+    border-radius: 7.5px;
+}
+.atc:hover{
+    background-color: #FFED00;
+}
+.carted{
+    background-color:chartreuse;
+    border-color: white;
+}
+.carted::after{
+    content: "ed";
+}
+.carted:hover{
+    background-color: rgb(84, 166, 1);
+    color: white;
+}
+
+
+@media  screen and (max-width:1100px){
+    .bookcard{
+        width: 25vw;
+        height: 45vw;
+        margin: 1vh 3vw;
+    }
+    p.book-description{
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    .bookcard{
+        width:35vw;
+        height:60vw;
+        margin: 1vh 5vw;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .bookcard{
+        width: 40vw;
+        height: 90vw;
+        margin: 1vh 3vw;
+        font-size: 0.8em;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .bookcard{
+        width: 65vw;
+        height: 100vw;
+        font-size: 1em;
+        margin: 1vh 4vw;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .bookcard{
+        width:75vw;
+        height: 130vw;
+        margin: 1vh 4vw;
+    }
+}

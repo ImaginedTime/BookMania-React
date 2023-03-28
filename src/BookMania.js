@@ -1,9 +1,12 @@
 import { useState } from "react";
+
 import Card from "./elements/Card";
 import Header from "./elements/Header";
 import IntroSection from "./elements/IntroSection";
 import ReviewSection from "./elements/ReviewSection";
 import Footer from "./elements/Footer";
+
+import "./BookMania.css";
 
 import Bestsellers from "./data/Bestsellers.json";
 import Recommendations from "./data/Recommendations.json";
@@ -18,7 +21,6 @@ function BookMania() {
 
     return (
         <>
-        <p>{bookCart}</p>
         <Header bookCart={bookCart} />
         <IntroSection />
         <section id="BestSellers">

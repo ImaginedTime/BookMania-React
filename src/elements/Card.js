@@ -1,4 +1,4 @@
-
+import "./Card.css";
 
 function Card(params) {
     let bookTitle = params.book.title;

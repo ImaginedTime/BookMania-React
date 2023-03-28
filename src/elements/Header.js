@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Cart from "./Cart";
+import "./Header.css";
 
 function Header({ bookCart }) {
     let titleimg = `${process.env.PUBLIC_URL}/imgs/logo.jpg`;

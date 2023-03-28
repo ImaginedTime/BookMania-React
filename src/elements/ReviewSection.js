@@ -1,4 +1,5 @@
 import ReviewHolder from "./ReviewHolder";
+import "./ReviewSection.css";
 
 function ReviewSection(params) {
     return (

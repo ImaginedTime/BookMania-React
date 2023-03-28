@@ -1,3 +1,4 @@
+import "./IntroSection.css";
 
 function IntroSection() {
     return (

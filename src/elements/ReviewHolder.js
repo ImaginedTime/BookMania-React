@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./ReviewHolder.css";
 
 function ReviewHolder({ reviews }) {
     let [currentSlide,setCurrentSlide] = useState(1);

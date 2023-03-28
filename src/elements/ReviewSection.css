@@ -1,0 +1,117 @@
+
+div.review-form{
+    margin-top: 3%;
+    width: 40vw;
+    height: 35vw;
+    justify-self: center;
+    resize: auto;
+    border-radius: 40px;
+    background-color: rgba(227, 237, 240, 0.39);
+}
+
+form.review-form{
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 12% auto 15% 10%;
+    justify-items: center;
+    align-items: center;
+}
+
+.review-form-title{
+    grid-row: 1;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-size: 3ch;
+    padding: 0.25em 1em;
+    background-color: white;
+    border-radius: 2em;
+    border-color: black;
+    border-width: 3px;
+    border-style:groove;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.review-form-title span{
+    font-weight: 700;
+}
+
+#review-text{
+    grid-row: 2;
+    margin-top: 2%;
+    height: 100%;
+    width: 90%;
+    resize:none;
+    border-radius: 15px;
+    padding-left: 3ch;
+    padding-top: 1ch;
+}
+
+#review-email{
+    grid-row: 3;
+    height: 60%;
+    width: 90%;
+    border-radius: 15px;
+    padding-left: 2ch;
+}
+
+#review-submit{
+    grid-row: 4;
+    font-size: 2ch;
+    width: 32%;
+    height: 70%;
+    margin-bottom: 4%;
+    border-radius: 15px;
+    border-color: white;
+    color: white;
+    background-color: #00001a;
+}
+
+
+@media  screen and (max-width:1100px){
+    div.reviews-holder{
+        width: 40vw;
+    }
+    div.review-form{
+        width: 50vw;
+        min-height: 45vw;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    div.review-form{
+        height: 50vw;
+    }
+    .review-form-title{
+        font-size: 2.4ch;
+    }
+}
+
+@media screen and (max-width: 700px){
+    div.reviews-holder{
+        width: 70vw;
+    }
+    div.review-form{
+        width: 70vw;
+        height: 70vw;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    div.reviews-holder{
+        width: 90vw;
+    }
+    div.review-form{
+        width: 90vw;
+        height: 95vw;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    div.review-form{
+        height: 110vw;
+    }
+}

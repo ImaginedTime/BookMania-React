@@ -1,0 +1,170 @@
+
+@keyframes slide {
+    from {margin-top: -100%;
+    opacity: 0;}
+    to {margin-top: 0%;
+    opacity: 100%;}    
+}
+
+header{
+    min-height: 9vh;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+div.navbar{
+    padding-right: 4%;
+}
+div.left-navbar{
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+.left-left-navbar, .right-left-navbar {
+    display: flex;
+    align-items: center;
+}
+.right-left-navbar{
+    justify-content: end;
+}
+
+div.navbar span{
+    display: inline-block;
+    padding: 0 10px;
+}
+div.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.15rem;
+}
+
+header img{
+    max-width: 80%;
+}
+div.logo{
+    flex: 0 0 20%;
+}
+
+div.title{
+    font-size: 5ch;
+    font-weight: bold;
+    width: auto;
+}
+div.title p{
+    display: inline;
+    color: #FFED00;
+}
+
+.cartmenu{
+    color: white;
+    box-sizing: border-box;
+    font-size: 3ch;
+    height: 100%;
+}
+.atcmenu2{
+    margin-right: 0.75ch;
+}
+.cartmenu:hover{
+    color: #FFED00;
+    cursor: pointer;
+}
+.cartmenu .fa.fa-shopping-cart{
+    margin: 0;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 801px) {
+    div.right-left-navbar{
+        display: none;
+    }
+
+    div.navbar{
+        display: inline-flex !important;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    header{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .right-left-navbar{
+        display: flex;
+        margin-right: 4.5%;
+    }
+
+    div.left-navbar{
+        flex: 0 0 98%;
+        background-color: black;
+    }
+
+    div.navbar{
+        flex: 0 0 100%;
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-top: 3%;
+        padding-bottom: 4%;
+        animation-name: slide;
+        animation-duration: 1s, 1s;
+        z-index: 2;
+    }
+    div.navbar span{
+        padding-top: 1%;
+        font-size: 2.5ch;
+    }
+
+    .cartmenu.atcmenu2 {
+        display: none;
+    }
+    .cartmenu {
+        margin-right: 1.5ch;
+    }
+
+    div.title{
+        flex: 0 0 75%;
+        font-size: 6ch;
+    }
+    .logo{
+        flex: 0 0 30%
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    div.title{
+        font-size: 3.5ch;
+    }
+
+    div.myCart {
+        right: auto;
+    }
+
+    div.myCart-low#myCart {
+        top: 30vh;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    div.title{
+        font-size: 3.2ch;
+    }
+
+    div.navbar{
+        font-size: 1.5ch;
+    }
+}
