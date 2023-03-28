@@ -1,7 +1,7 @@
 
 function Cart(params) {
     return (
-        <div id="myCart">
+        <div id="myCart" style={{display : (params.isVisible ? "flex" : "none")}}>
             {params.bookCart.length ? (
                 <>
                     <h1><span>Your Cart</span></h1>
