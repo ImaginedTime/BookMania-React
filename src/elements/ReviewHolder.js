@@ -27,8 +27,8 @@ function ReviewHolder({ reviews }) {
     return (
         <div className="reviews-holder" id="Reviews">
             {reviews.map((review) => Review(review, currentSlide))}
-            <i className="prev" onClick={() => changeSlide(-1)}>&#10094;</i>
-            <i className="next" onClick={() => changeSlide(1)}>&#10095;</i>
+            <b className="prev" onClick={() => changeSlide(-1)}>&#10094;</b>
+            <b className="next" onClick={() => changeSlide(1)}>&#10095;</b>
             <div className="dots">
                 {reviews.map((review) => makedot(review.id))}
             </div>
