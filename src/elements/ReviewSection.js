@@ -1,4 +1,4 @@
-import ReviewHolder from "./Review";
+import ReviewHolder from "./ReviewHolder";
 
 function ReviewSection(params) {
     return (
