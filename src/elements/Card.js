@@ -15,6 +15,10 @@ function Card(params) {
             bookCart.push(title);
         }
         params.setBookCart(bookCart);
+
+        if (!params.CartDisplay.isVisible){
+            params.CartDisplay.setIsVisible(true);
+        }
     }
 
     return (

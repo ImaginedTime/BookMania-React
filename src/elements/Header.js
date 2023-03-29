@@ -2,19 +2,17 @@ import { useState } from "react";
 import Cart from "./Cart";
 import "./Header.css";
 
-function Header({ bookCart }) {
+function Header({ bookCart, CartDisplay }) {
     let titleimg = `${process.env.PUBLIC_URL}/imgs/logo.jpg`;
     let [navVisible, setNavVisible] = useState(false);
-    let [cartVisible, setCartVisible] = useState(false);
-
     const togglenav = () => {
         let temp = !navVisible;
         setNavVisible(temp);
     };
 
     const toggleCart = () => {
-        let temp = !cartVisible;
-        setCartVisible(temp);
+        let temp = !CartDisplay.isVisible;
+        CartDisplay.setIsVisible(temp);
     }
 
 
@@ -45,7 +43,7 @@ function Header({ bookCart }) {
                 <span><a href="#Recommendations" onClick={() => togglenav()}>Recommendations</a></span>
                 <span><a href="#Reviews" onClick={() => togglenav()}>Reviews</a></span>
             </div>
-            <Cart bookCart={bookCart} isVisible={cartVisible} visibleNav={navVisible} />
+            <Cart bookCart={bookCart} isVisible={CartDisplay.isVisible} visibleNav={navVisible} />
         </header>
     );
 }
