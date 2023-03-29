@@ -58,23 +58,6 @@ section#Intro{
     background-color: #FFED00;
 }
 
-button.backtotop{
-    font-size: 3ch;
-    border-radius: 50%;
-    height: 3.5rem;
-    width: 3.5rem;
-    color: black;
-    background-color: white;
-    position: fixed;
-    bottom: 3vh;
-    right: 3vh;
-    cursor: pointer;
-    display: none;
-    border-width: 0;
-    justify-content: center;
-    align-content: center;
-}
-
 
 @media screen and (max-width: 920px) {
     .search-bar input{
@@ -82,14 +65,6 @@ button.backtotop{
     }
     .search-bar button{
         width: 10vw;
-    }
-}
-
-
-@media screen and (max-width: 800px) {
-    button.backtotop{
-        height: 2.5rem;
-        width: 2.5rem;
     }
 }
 

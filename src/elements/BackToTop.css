@@ -1,0 +1,22 @@
+button.backtotop{
+    font-size: 3ch;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: black;
+    background-color: white;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
+    cursor: pointer;
+    border-width: 0;
+    padding: auto auto;
+}
+
+
+@media screen and (max-width: 800px) {
+    button.backtotop{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}

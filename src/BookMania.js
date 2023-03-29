@@ -11,6 +11,7 @@ import "./BookMania.css";
 import Bestsellers from "./data/Bestsellers.json";
 import Recommendations from "./data/Recommendations.json";
 import Reviews from "./data/Reviews.json";
+import BackToTop from "./elements/BackToTop";
 
 
 function BookMania() {
@@ -41,7 +42,7 @@ function BookMania() {
         </section>
         <ReviewSection reviews={reviews} />
         <Footer />
-        <a href="#Intro" className="backtotop"><button className="backtotop">▲</button></a>
+        <BackToTop />
         </>
     );
 }
