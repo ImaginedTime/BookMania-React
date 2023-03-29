@@ -86,19 +86,27 @@ p.book-description{
     border-color: black;
     border-radius: 7.5px;
 }
+.atc::after{
+    content: "Add";
+}
 .atc:hover{
-    background-color: #FFED00;
+    background-color:rgb(92, 185, 0);
+    border-color: white;
+    color: white;
 }
 .carted{
     background-color:chartreuse;
     border-color: white;
 }
 .carted::after{
-    content: "ed";
+    content: "Added";
 }
 .carted:hover{
-    background-color: rgb(84, 166, 1);
+    background-color: rgb(255, 64, 0);
     color: white;
+}
+.carted:hover::after{
+    content: "Remove";
 }
 
 

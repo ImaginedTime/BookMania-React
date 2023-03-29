@@ -34,7 +34,7 @@ function Card(params) {
                 <div className="backside-bookcard">
                     <p className="book-description">{bookDescription}</p>
                     <h2 className="book-price">Rs. {bookPrice}</h2>
-                    <button className={`add-to-cart ${params.bookCart.some((ele) => {return ele==bookTitle}) ? "carted" : "atc"}`} onClick={() => addtocart(bookTitle)}>Add</button>
+                    <button className={`add-to-cart ${params.bookCart.some((ele) => {return ele==bookTitle}) ? "carted" : "atc"}`} onClick={() => addtocart(bookTitle)}></button>
                 </div>
             </div>
         </div>
