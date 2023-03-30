@@ -12,7 +12,7 @@ div#Intro div{
     padding: 1%;
     background-color: rgba(227, 237, 240, 0.39);
     border-radius: 30px;
-    min-width: 350px;
+    min-width: 400px;
     max-width: 35vw;
     min-height: 40vh;
     display: flex;
@@ -65,14 +65,14 @@ button.Bestsellers p{
 }
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
     .flex-container#Intro{
         justify-content: center;
     }
 
-    div#intro div{
+    div#Intro div{
         margin: 8% 10%;
-        min-width: 80vw;
+        min-width: 85vw;
         height: 50vh;
     }
 
