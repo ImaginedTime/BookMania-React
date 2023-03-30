@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/BookMania-React/static/css/main.33d5a225.css",
+    "main.css": "/BookMania-React/static/css/main.88814daf.css",
     "main.js": "/BookMania-React/static/js/main.6a57f313.js",
     "index.html": "/BookMania-React/index.html",
-    "main.33d5a225.css.map": "/BookMania-React/static/css/main.33d5a225.css.map",
+    "main.88814daf.css.map": "/BookMania-React/static/css/main.88814daf.css.map",
     "main.6a57f313.js.map": "/BookMania-React/static/js/main.6a57f313.js.map"
   },
   "entrypoints": [
-    "static/css/main.33d5a225.css",
+    "static/css/main.88814daf.css",
     "static/js/main.6a57f313.js"
   ]
 }
